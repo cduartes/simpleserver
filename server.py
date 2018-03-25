@@ -16,7 +16,7 @@ def Main():
 	#socket options: (socket-level, reutilice the socket and value 1 socket is known by this value)
 	mySocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 	#binding port to socket
-	mySocket.bind(('127.0.0.1',port))
+	mySocket.bind((host,port))
 	#listen port socket 1
 	mySocket.listen(1)
 	#print server status
